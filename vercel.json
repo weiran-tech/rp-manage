@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "pnpm install --frozen-lockfile",
+  "buildCommand": "pnpm build:site",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/docs", "destination": "/docs/", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/((?!docs(?:/|$)).*)", "destination": "/" }
+  ]
+}

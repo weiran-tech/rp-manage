@@ -1,0 +1,20 @@
+{
+  "name": "weiran-prototype",
+  "private": true,
+  "packageManager": "pnpm@12.15.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "turbo run dev --filter=@weiran/manage",
+    "dev:docs": "turbo run dev --filter=@weiran/docs",
+    "build": "turbo run build",
+    "build:site": "pnpm build && node scripts/assemble-site.mjs",
+    "build:web": "turbo run build --filter=@weiran/manage",
+    "build:docs": "turbo run build --filter=@weiran/docs",
+    "docs:preview": "turbo run preview --filter=@weiran/docs",
+    "test": "turbo run test",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "turbo": "^2.11.10"
+  }
+}
