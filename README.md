@@ -7,8 +7,8 @@ pnpm install
 pnpm dev
 ```
 
-- 原型入口：http://localhost:4802（`admin` / `admin123`，短信演示验证码 `123456`）
-- 文档入口：http://localhost:4809/docs/
+- 原型入口：[http://localhost:4802](http://localhost:4802)（`admin` / `admin123`，短信演示验证码 `123456`）
+- 文档入口：[http://localhost:4809/docs/](http://localhost:4809/docs/)
 - 独立启动：`pnpm dev:web` / `pnpm dev:docs`
 - 验证：`pnpm lint`、`pnpm test`、`pnpm build`
 - 预览构建：`pnpm --filter @weiran/manage preview` / `pnpm docs:preview`
